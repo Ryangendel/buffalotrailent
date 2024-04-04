@@ -264,3 +264,9 @@ h5 {
 #bte-name{
     letter-spacing: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+  }
