@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lexend&family=Open+Sans:wght@300;400&display=swap');
+
+/* Applies to all Section */
+
+body, html, main {
+  height: 100%;
+  font-size: 10px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Parallax 1 Text*/
+
+.header {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+  color: #CFB87C;
+  font-family: 'Lexend', sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* All Block Text */
+
+h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: 'Lexend', sans-serif;
+  text-align: center;
+ 
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  text-align: left;
+}
+
+/* Block 1 Image & Edit */
+
+.left {
+  margin-left: 5%;
+}
+
+.img1 {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  margin-left: 5%;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+/* Parallax 2 Text */
+
+h4 {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lexend', sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+h6 {
+  letter-spacing: 1rem;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+}
+/* Block 2 Images */
+
+.padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.animationImg {
+  margin: 15px 0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.animationImg img {
+  width: 10vw;
+  height: 10vw;
+  padding-bottom: 1vh;
+  border-radius: 50%;
+}
+
+.animationImg-cover img {
+  object-fit: cover;
+}
+
+.overlay {
+  overflow: hidden;
+  transition: transform .3s ease;
+  transition: opacity .1s ease;
+  opacity: 0.9;
+}
+
+.animation:hover > .overlay {
+  opacity: 1;
+  display: block;
+  border-radius: 50%;
+  transform: scale(1.15);
+}
+
+/* Block 2 Text */
+
+.animation {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.animationName {
+  padding-top: 1.5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+/* Blocks */
+
+.block {
+  padding: 70px 15%;
+}
+
+.block-light {
+  background-color: #080c14;
+  color: white; 
+  display: flex;
+  align-items: center;
+}
+
+.block-dark {
+  background-color: #080c14;
+  color: white;
+}
+
+/* Parallax 3 Text*/
+h5 {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+/* Parrallax */
+
+.px1, .px2, .px3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.px1 {
+  background-image: url('../image/logo_no_text.png');
+  min-height: 100%;
+}
+
+.px2 {
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.3)), url(https://64.media.tumblr.com/84ad103a90b73ba47a42438aafe05fe1/tumblr_mv7gwkbuPl1qbvovho1_500.gif);
+  min-height: 500px;
+}
+
+.px3 {
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(https://i.pinimg.com/originals/aa/29/c8/aa29c87da305509a8a4aa38ad45fe508.gif);
+  min-height: 500px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .left {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .block-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .img1 {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left {
+    text-align: center;
+    font-size: 1.25rem;
+  }  
+}
+
+@media only screen and (max-width: 1260px) {
+.animationImg img {
+    min-width: 120px;
+    min-height: 120px;
+  }
+.animationName {
+  padding-bottom: 2vh;
+  }  
+}
+
+@media only screen and (max-width: 810px) {
+.padding {
+  padding-left: 0px;
+  padding-right: 0px;    
+  }
+  h4 {
+    font-size: 4rem;
+    letter-spacing: 3.5px;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .px1, .px2, .px3{
+    background-attachment: scroll;
+  }
+  h5 {
+    width: 80%;
+  }
+  .px3 {
+    box-sizing: content-box;
+    padding-left: 10%;
+  }
+}
+
+#bte-name{
+    letter-spacing: 1rem;
+}
