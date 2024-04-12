@@ -770,6 +770,6 @@ div#row.lowerRow{
     }
     .image{
         /* -webkit-filter:drop-shadow(1px 1px 1px #CFB87C) */
-        -webkit-filter:drop-shadow(1px 1px 1px red)
+        -webkit-filter:drop-shadow(-2px -2px 1px blue)
     }
 }
