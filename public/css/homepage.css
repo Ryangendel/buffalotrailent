@@ -216,7 +216,7 @@ h5 {
 }
 
 .px3 {
-  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url("../image/hanger.png");
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url("../image/hanger_51.png");
   min-height: 500px;
 }
 
@@ -547,7 +547,7 @@ h5 {
         margin: 0; /* Reset margin for all elements */
         padding: 0; /* Reset padding for all elements */
     }
-    
+
     .logo-box, .wide-box {
         width: 80px; /* Adjusted width for smaller containers on mobile */
         height: 80px; /* Adjusted height on mobile */
