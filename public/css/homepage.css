@@ -842,3 +842,9 @@ div#row.lowerRow{
       color: #000 !important;
   }
     /* PROFILE PICTURES 88888888888888888*/
+
+    @media screen and (min-width: 24.375em) {
+        #title {
+          font-size: 4rem;
+        }
+      }
