@@ -772,7 +772,7 @@ div#row.lowerRow{
         /* -webkit-filter:drop-shadow(1px 1px 1px #CFB87C) */
         
         border: 2px solid #CFB87C;
-        -webkit-filter:box-shadow(none);
+        -webkit-filter:box-shadow(0 0 0);
     }
 
     #partnerSection{
