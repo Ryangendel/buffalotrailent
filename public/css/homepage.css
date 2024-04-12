@@ -510,45 +510,52 @@ h5 {
   
   .logo-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px;
+    justify-content: center; /* Centers logos horizontally */
+    align-items: center; /* Centers logos vertically */
+    flex-wrap: wrap; /* Allows logos to wrap onto the next line */
+    width: 100%; /* Ensures the container fills the width of its parent */
+    padding: 20px; /* Adds padding around the container */
+    margin: auto; /* Ensures no additional margin is influencing alignment */
+    max-width: calc(100% - 40px); /* Adjusts for padding, ensures it doesn't exceed the viewport */
 }
 
-/* Standard box for each logo */
 .logo-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px; /* Standard width for square logos */
-    height: 120px; /* Standard height for all logos */
-    margin: 10px;
-    overflow: hidden; /* Ensures no logo spills out */
-   
+    justify-content: center; /* Centers content horizontally within each logo box */
+    align-items: center; /* Centers content vertically within each logo box */
+    width: 100px; /* Set width for square logos */
+    height: 100px; /* Set height for all logos */
+    margin: 10px; /* Uniform margin to bring logos closer together */
+    overflow: hidden; /* Prevents content from spilling out */
 }
 
-/* Specific styles for wide logos */
 .wide-box {
-    width: 400px; /* Double width for wide logos */
+    width: 300px; /* Increased width for wide logos */
+    height: 100px; /* Consistent height with other logos */
 }
 
-/* Style for each logo */
 .uniform-logo {
     max-width: 100%; /* Allows resizing without overflow */
-    max-height: 100%; /* Keeps within bounds */
-    object-fit: contain; /* Maintain aspect ratio within bounds */
+    max-height: 100%; /* Ensures logo stays within bounds */
+    object-fit: contain; /* Maintains aspect ratio */
 }
 
 /* Media query for small devices */
 @media (max-width: 600px) {
+    * {
+        box-sizing: border-box; /* Ensures padding and borders are included in width/height calculations */
+        margin: 0; /* Reset margin for all elements */
+        padding: 0; /* Reset padding for all elements */
+    }
+    
     .logo-box, .wide-box {
-        width: 80px; /* Smaller containers on mobile */
-        height: 80px;
+        width: 80px; /* Adjusted width for smaller containers on mobile */
+        height: 80px; /* Adjusted height on mobile */
+        margin: 5px; /* Smaller margin to keep logos closer on mobile */
     }
     .wide-box {
-        width: 160px; /* Adjusted for mobile */
+        width: 160px; /* Adjusted width for wide logos on mobile */
+        height: 80px; /* Consistent height */
     }
 }
 
