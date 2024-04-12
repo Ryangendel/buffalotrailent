@@ -302,7 +302,7 @@ h5 {
     }
   }
 
-  /* START GALLERY*/
+  /* START GALLERY--------------------------------------*/
   .container{
     /* 	margin: 30px; */
       box-sizing: border-box;
@@ -318,11 +318,13 @@ h5 {
     
     .image{
       border-radius: 40px;
-        background: #50A7FF;
+        /* background: #50A7FF; */
+        background-color: rgba(0, 0, 0, red);
         position: relative;
         flex: 1;
         width: 200px;
         height: 200px;
+        -webkit-filter: drop-shadow(5px 5px 5px #CFB87C);
     /* 	margin: 30px; */
       margin: calc(4vh);
       
@@ -352,10 +354,12 @@ h5 {
     }
     
     .image:hover img{
-        opacity: 0.8;
+        opacity: .1;
+        
     }
     
     .image .details{
+        background-color: rgba(0, 0, 0, .7);
         z-index: 1;
         position: absolute;
         top: 0;
@@ -394,13 +398,54 @@ h5 {
     }
     
     .image:hover .details p{
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-40px);
     }
-    
+    .image:hover .details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-color: rgba(0, 0, 0, .1);
+    }
+    .image:hover #two.details{
+        /* background-image: rgba(0,0,0,.1);  */
+       
+        /* background-size: contain; */
+          /* vertical-align: top; */
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://animost.com/wp-content/uploads/2022/05/cgi-3.jpg");
+         
+    }
+    .image:hover #one.details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-image: url("../image/AMPAS-Logo.png");
+        background-size: cover;
+    }
+    .image:hover #three.details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-image: url("https://bsmedia.business-standard.com/_media/bs/img/article/2023-11/19/full/1700410101-7308.jpg?im=FeatureCrop,size=(826,465)");
+        background-size: cover;
+    }
+    .image:hover #four.details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-image: url("https://images.pexels.com/videos/5858877/pexels-photo-5858877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size: cover;
+    }
+    .image:hover #five.details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-image: url("https://blog.castac.org/wp-content/uploads/sites/2/2019/11/2020sz-Avery_Szumlanski.jpg");
+        background-size: cover;
+    }
+    .image:hover #six.details{
+        /* background-image: rgba(0,0,0,.1);  */
+        background-image: url("https://cdn.cancercenter.com/-/media/ctca/images/others/blogs/2022/12-december/blog-meditation-l.jpg");
+        background-size: cover;
+    }
+
     .more{
         position: absolute;
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(0, 0, 0, .9);
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -416,7 +461,7 @@ h5 {
     }
     
     .more .read-more{
-        color: #000;
+        color: #818589;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
@@ -462,55 +507,50 @@ h5 {
   /* END GALLERY  */
 
   /* START LOGO GALLERY ----------------------------------------------*/
-  a {
-    color: #660033;
-    text-decoration: none;
-  }
   
-  .page-title {
-    text-align: center;
-    font-weight: 100;
-  }
-  
-  .page-description {
-    border: 1px solid #000;
-    margin: 2px;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  .gallery {
-    margin-top: 20px;
+  .logo-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    
-  }
-  
-  .gallery-item {
-    margin: 20px;
-  }
-  
-  .gallery-item .thumbnail {
-    /*border: 5px solid #fff;*/
-  }
-  
-  figure {
-      /* border: thin silver solid; */
-      display: flex;
-      flex-flow: column;
-      margin: 0;
-      padding: 5px;
-  }
-  
-  figcaption {
-      background: #222;
-      color: #fff;
-      font: italic smaller sans-serif;
-      padding: 3px;
-      text-align: center;
-  }
-  
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Standard box for each logo */
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Standard width for square logos */
+    height: 120px; /* Standard height for all logos */
+    margin: 10px;
+    overflow: hidden; /* Ensures no logo spills out */
+   
+}
+
+/* Specific styles for wide logos */
+.wide-box {
+    width: 400px; /* Double width for wide logos */
+}
+
+/* Style for each logo */
+.uniform-logo {
+    max-width: 100%; /* Allows resizing without overflow */
+    max-height: 100%; /* Keeps within bounds */
+    object-fit: contain; /* Maintain aspect ratio within bounds */
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+    .logo-box, .wide-box {
+        width: 80px; /* Smaller containers on mobile */
+        height: 80px;
+    }
+    .wide-box {
+        width: 160px; /* Adjusted for mobile */
+    }
+}
 
   /* END LOGO GALLERY ----------------------------*/
 
