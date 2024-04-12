@@ -764,7 +764,7 @@ div#row.lowerRow{
     }
 }
 /* MEET THE TEAM END 77777777777777777777 */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     #title{
         font-size: 4rem;
     }
