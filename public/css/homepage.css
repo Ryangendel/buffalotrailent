@@ -769,6 +769,7 @@ div#row.lowerRow{
         font-size: 4rem;
     }
     .image{
-        -webkit-filter:drop-shadow(1px 1px 1px #CFB87C)
+        /* -webkit-filter:drop-shadow(1px 1px 1px #CFB87C) */
+        -webkit-filter:drop-shadow(1px 1px 1px red)
     }
 }
