@@ -770,6 +770,14 @@ div#row.lowerRow{
     }
     .image{
         /* -webkit-filter:drop-shadow(1px 1px 1px #CFB87C) */
-        -webkit-filter:drop-shadow(-2px -2px 1px blue)
+        -webkit-filter:box-shadow(-2px -2px 1px blue)
+    }
+
+    #partnerSection{
+        font-size: 3rem;
+    }
+
+    #projecttypes{
+        font-size: 3rem;  
     }
 }
