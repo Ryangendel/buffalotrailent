@@ -781,3 +781,11 @@ div#row.lowerRow{
 .meettheteam{
     text-align:center;
 }
+
+@media (max-width: 600px) {
+    .image{
+        -webkit-filter: drop-shadow(0px 0px 0px #CFB87C);
+        border-style: solid 1px #CFB87C
+        
+    }
+}
