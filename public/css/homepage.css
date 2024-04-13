@@ -800,4 +800,7 @@ div#row.lowerRow{
         font-weight: 500;
         /* text-transform: uppercase; */
     }
+    .big-text{
+        font-size:15px
+    }
 }
