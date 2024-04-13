@@ -713,11 +713,6 @@ div#row.lowerRow{
     /* background: #ffffff; */
 }
 
-.meettheteam {
-    text-align: center;
-    /* background: #ffffff; */
-}
-
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in larger screens */
@@ -729,12 +724,20 @@ div#row.lowerRow{
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
+    background: #fff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .team-member img {
     width: 100%;
-    display: block;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    object-position: center 15%; /* Centers the image within the element */
     transition: transform 0.3s ease;
+}
+
+.team-member img#ryan{
+    object-position: center 45%; /* Centers the image within the element */
 }
 
 .overlay-text {
@@ -766,27 +769,15 @@ div#row.lowerRow{
         grid-template-columns: 1fr; /* One column on smaller screens */
     }
 
+    .team-member img {
+        height: 150px; /* Smaller fixed height on mobile */
+    }
+
     .bio, .overlay-text {
         font-size: 14px;
     }
 }
-/* MEET THE TEAM END 77777777777777777777 */
-@media (max-width: 400px) {
-    #title{
-        font-size: 4rem;
-    }
-    .image{
-        /* -webkit-filter:drop-shadow(1px 1px 1px #CFB87C) */
-        
-        border: 2px solid #CFB87C;
-        -webkit-filter:drop-shadow(0 0 0);
-    }
 
-    #partnerSection{
-        font-size: 3rem;
-    }
-
-    #projecttypes{
-        font-size: 3rem;  
-    }
+.meettheteam{
+    text-align:center;
 }
