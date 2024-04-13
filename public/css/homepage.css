@@ -454,6 +454,7 @@ h5 {
         bottom: -60px;
         transition: 0.6s;
         transition-property: bottom;
+        height:40%
     }
     
     .image:hover .more{
@@ -461,11 +462,11 @@ h5 {
     }
     
     .more .read-more{
-        color: #818589;
+        color: #CFB87C;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 500;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
     }
     
     .more .read-more span{
