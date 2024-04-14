@@ -25,8 +25,9 @@
 
 
     function toggleTypesOfProjects(element) {
-       
-        var readMore = element.querySelector('.read-more');
+       console.log(element)
+        var readMore = element.querySelector('.more');
+        console.log(readMore)
         if (readMore.style.display === 'none' || readMore.style.display === '') {
             readMore.style.display = 'block'; // Show bio
             element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
@@ -326,7 +327,7 @@
                     <h2 id="contact-us">Contact</h2>
 
                     <address>
-                        5534 Somewhere In. The World 22193-10212<br>
+                        6565 Americas pkwy NE suite 228, Albuquerque NM, 87110<br>
 
                         <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
                     </address>
