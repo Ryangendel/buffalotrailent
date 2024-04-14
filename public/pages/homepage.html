@@ -23,6 +23,19 @@
         }
     }
 
+
+    function toggleTypesOfProjects(element) {
+       
+        var readMore = element.querySelector('.read-more');
+        if (readMore.style.display === 'none' || readMore.style.display === '') {
+            readMore.style.display = 'block'; // Show bio
+            element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
+        } else {
+            readMore.style.display = 'none'; // Hide bio
+            element.querySelector('img').style.transform = 'scale(1)'; // Reset zoom effect
+        }
+    }
+
     
 </script>
 
@@ -60,7 +73,7 @@
                 <!--image row start-->
                 <div id="row">
                     <!--image card start-->
-                    <div class="image">
+                    <div class="image" onclick="toggleTypesOfProjects(this)">
                         <img src="../image/AMPAS-Logo.png" alt="">
                         <div class="details" id="one">
                             <h2>Feature <span>Films</span></h2>

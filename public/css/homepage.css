@@ -357,7 +357,7 @@ h5 {
         transition-property: opacity;
     }
     
-    .image:hover img, .image.active img{
+    .image:hover img{
         opacity: .1;
         
     }
@@ -387,7 +387,7 @@ h5 {
         font-weight: 900;
     }
     
-    .image:hover .details h2, .image:focus .details h2{
+    .image:hover .details h2{
         transform: translateY(-30px);
     }
     
@@ -401,15 +401,15 @@ h5 {
         transition-property: opacity, transform;
     }
     
-    .image:hover .details p, .image:focus .details p{
+    .image:hover .details p{
         opacity: 0;
         transform: translateY(-40px);
     }
-    .image:hover .details,  .image:focus .details{
+    .image:hover .details{
         /* background-image: rgba(0,0,0,.1);  */
         background-color: rgba(0, 0, 0, .1);
     }
-    .image:hover #two.details, .image:focus #two.details{
+    .image:hover #two.details{
         /* background-image: rgba(0,0,0,.1);  */
        
         /* background-size: contain; */
@@ -421,27 +421,27 @@ h5 {
         background-image: url("https://animost.com/wp-content/uploads/2022/05/cgi-3.jpg");
          
     }
-    .image:hover #one.details, .image:focus #one.details{
+    .image:hover #one.details{
         /* background-image: rgba(0,0,0,.1);  */
         background-image: url("../image/AMPAS-Logo.png");
         background-size: cover;
     }
-    .image:hover #three.details, .image:focus #three.details{
+    .image:hover #three.details{
         /* background-image: rgba(0,0,0,.1);  */
         background-image: url("https://bsmedia.business-standard.com/_media/bs/img/article/2023-11/19/full/1700410101-7308.jpg?im=FeatureCrop,size=(826,465)");
         background-size: cover;
     }
-    .image:hover #four.details, .image:focus #four.details{
+    .image:hover #four.details{
         /* background-image: rgba(0,0,0,.1);  */
         background-image: url("https://images.pexels.com/videos/5858877/pexels-photo-5858877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
         background-size: cover;
     }
-    .image:hover #five.details, .image:focus #five.details{
+    .image:hover #five.details{
         /* background-image: rgba(0,0,0,.1);  */
         background-image: url("https://blog.castac.org/wp-content/uploads/sites/2/2019/11/2020sz-Avery_Szumlanski.jpg");
         background-size: cover;
     }
-    .image:hover #six.details, .image:focus #six.details{
+    .image:hover #six.details{
         /* background-image: rgba(0,0,0,.1);  */
         background-image: url("https://cdn.cancercenter.com/-/media/ctca/images/others/blogs/2022/12-december/blog-meditation-l.jpg");
         background-size: cover;
