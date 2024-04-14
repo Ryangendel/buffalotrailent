@@ -796,7 +796,7 @@ div#row.lowerRow{
         border: 2px solid #CFB87C
         
     }
-    #ffw1{display: block; }
+    #ffw1{margin-left:40px }
 
     #title{
         font-size:4rem;
