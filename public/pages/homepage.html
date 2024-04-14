@@ -23,26 +23,27 @@
         }
     }
 
-    function isSmallScreen() {
-        return window.innerWidth <= 800 && window.innerHeight <= 600;
-    }
-
-    if (isSmallScreen()) {
-        document.getElementsByClassName('image').addEventListener('click', function(element) {
-       
-   
-        var bio = element.querySelector('.bio');
-        if (bio.style.display === 'none' || bio.style.display === '') {
-            bio.style.display = 'block'; // Show bio
-            element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
-        } else {
-            bio.style.display = 'none'; // Hide bio
-            element.querySelector('img').style.transform = 'scale(1)'; // Reset zoom effect
-        }
+    function addClickTouchHandler(element, handlerFunction) {
+    element.addEventListener('click', handlerFunction);
+    element.addEventListener('touchstart', function(event) {
+        event.preventDefault(); // Prevent mouse event from firing as well
+        handlerFunction.call(element, event); // Call the handler
     });
-    } else {
-        console.log("Probably not on a small screen device.");
-    }
+}
+
+// Define the toggleBio function, assumed you have it defined somewhere
+function toggleBio(element) {
+    // Your toggle code here
+    console.log("Toggled bio for element", element);
+}
+
+// Apply to all elements with class 'team-member'
+document.addEventListener('DOMContentLoaded', function() {
+    var teamMembers = document.querySelectorAll('.team-member');
+    teamMembers.forEach(function(member) {
+        addClickTouchHandler(member, function() { toggleBio(member); });
+    });
+});
 </script>
 
 
