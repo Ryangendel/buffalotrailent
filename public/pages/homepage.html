@@ -12,16 +12,37 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 <script>
-function toggleBio(element) {
-    var bio = element.querySelector('.bio');
-    if (bio.style.display === 'none' || bio.style.display === '') {
-        bio.style.display = 'block'; // Show bio
-        element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
-    } else {
-        bio.style.display = 'none'; // Hide bio
-        element.querySelector('img').style.transform = 'scale(1)'; // Reset zoom effect
+    function toggleBio(element) {
+        var bio = element.querySelector('.bio');
+        if (bio.style.display === 'none' || bio.style.display === '') {
+            bio.style.display = 'block'; // Show bio
+            element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
+        } else {
+            bio.style.display = 'none'; // Hide bio
+            element.querySelector('img').style.transform = 'scale(1)'; // Reset zoom effect
+        }
     }
-}
+
+    function isSmallScreen() {
+        return window.innerWidth <= 800 && window.innerHeight <= 600;
+    }
+
+    if (isSmallScreen()) {
+        document.getElementsByClassName('image').addEventListener('click', function(element) {
+       
+   
+        var bio = element.querySelector('.bio');
+        if (bio.style.display === 'none' || bio.style.display === '') {
+            bio.style.display = 'block'; // Show bio
+            element.querySelector('img').style.transform = 'scale(1.1)'; // Optional: Zoom effect on image
+        } else {
+            bio.style.display = 'none'; // Hide bio
+            element.querySelector('img').style.transform = 'scale(1)'; // Reset zoom effect
+        }
+    });
+    } else {
+        console.log("Probably not on a small screen device.");
+    }
 </script>
 
 
@@ -65,7 +86,8 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more">We develop script to screen small budget through studio size projects.</a>
+                                <a href="#" class="read-more">We develop script to screen small budget through studio
+                                    size projects.</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +100,8 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more">Our services include MoCap CGI, traditional and AI animation, as well as 3D imaging.</a>
+                                <a href="#" class="read-more">Our services include MoCap CGI, traditional and AI
+                                    animation, as well as 3D imaging.</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +115,8 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more">With a variety of genres, we produce small budget shorts to big budget premium series. </a>
+                                <a href="#" class="read-more">With a variety of genres, we produce small budget shorts
+                                    to big budget premium series. </a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +134,8 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more">Distinctive development of higher-minded reality story telling.</a>
+                                <a href="#" class="read-more">Distinctive development of higher-minded reality story
+                                    telling.</a>
                             </div>
                         </div>
                     </div>
@@ -125,8 +150,9 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more">Video games reimagined with AI-generated, unprecedented tech that lead the pack.</a>
-                              
+                                <a href="#" class="read-more">Video games reimagined with AI-generated, unprecedented
+                                    tech that lead the pack.</a>
+
                             </div>
                         </div>
                     </div>
@@ -139,7 +165,8 @@ function toggleBio(element) {
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p> -->
                             <div class="more">
-                                <a href="#" class="read-more" id="documentaries">The most important story is the human experience, overcoming problems and inspiring others.</a>
+                                <a href="#" class="read-more" id="documentaries">The most important story is the human
+                                    experience, overcoming problems and inspiring others.</a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +183,7 @@ function toggleBio(element) {
             <!-- Block 2 -->
 
             <div class="block block-dark">
-                
+
                 <!-- ------------------------------ -->
                 <!-- <div class="container1">
                     <div class="service-details">
@@ -175,7 +202,7 @@ function toggleBio(element) {
                 <!-- ------------------------------ -->
                 <h2 class="meettheteam">MEET THE TEAM</h2>
                 <div class="team-container">
-                    
+
                     <div class="team-grid">
                         <!-- Team Member 1 -->
                         <div class="team-member" onclick="toggleBio(this)">
@@ -185,7 +212,8 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Chief Executive Officer</p> -->
                             </div>
                             <div class="bio">
-                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years of experience.
+                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years
+                                of experience.
                             </div>
                         </div>
                         <!-- Additional team members -->
@@ -196,7 +224,8 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Project Manager</p> -->
                             </div>
                             <div class="bio">
-                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years of experience.
+                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years
+                                of experience.
                             </div>
                         </div>
                         <div class="team-member" onclick="toggleBio(this)">
@@ -206,15 +235,16 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Project Manager</p> -->
                             </div>
                             <div class="bio">
-                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years of experience.
+                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years
+                                of experience.
                             </div>
                         </div>
                     </div>
                 </div>
-              
-              
+
+
                 <div class="team-container">
-                  
+
                     <div class="team-grid">
                         <!-- Team Member 1 -->
                         <div class="team-member" onclick="toggleBio(this)">
@@ -224,7 +254,11 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Project Manager</p> -->
                             </div>
                             <div class="bio">
-                                Kenneth Kemp is an award-winning writer, producer, and director. As a team executive, Ken is a creative script to screen. Besides his work in film and television, he has also produced and directed live international sporting events, including multiple Olympic Games. Ken has several films in pre- production, including 29 Miles to Epsom and Queue and will soon release his debut novel, ATTACHÉ, an international crime thriller.
+                                Kenneth Kemp is an award-winning writer, producer, and director. As a team executive,
+                                Ken is a creative script to screen. Besides his work in film and television, he has also
+                                produced and directed live international sporting events, including multiple Olympic
+                                Games. Ken has several films in pre- production, including 29 Miles to Epsom and Queue
+                                and will soon release his debut novel, ATTACHÉ, an international crime thriller.
                             </div>
                         </div>
                         <!-- Additional team members -->
@@ -235,7 +269,8 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Project Manager</p> -->
                             </div>
                             <div class="bio">
-                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years of experience.
+                                Jane leads our projects with a focus on efficiency and innovation. She has over 10 years
+                                of experience.
                             </div>
                         </div>
                         <div class="team-member" onclick="toggleBio(this)">
@@ -245,34 +280,38 @@ function toggleBio(element) {
                                 <!-- <p class="job-title">Project Manager</p> -->
                             </div>
                             <div class="bio">
-                                Ryan was a graphic designer before he learned computer science at Northwestern and for the past 10 years has been involved in tech; from working with three startups doing data analytics, software development, and graphic design to teaching at major universities. Currently he is teaching the coding bootcamp at MIT and has taught at the University of Denver and UC Berkeley. 
+                                Ryan was a graphic designer before he learned computer science at Northwestern and for
+                                the past 10 years has been involved in tech; from working with three startups doing data
+                                analytics, software development, and graphic design to teaching at major universities.
+                                Currently he is teaching the coding bootcamp at MIT and has taught at the University of
+                                Denver and UC Berkeley.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <!-- Parallax 3 -->
+        <!-- Parallax 3 -->
 
-            <div class="px3">
-                <h3 id="partnerSection">Partners</h3>
+        <div class="px3">
+            <h3 id="partnerSection">Partners</h3>
 
-                <div class="logo-container" id="uniqueLogoContainer">
-                    <div class="logo-box">
-                        <img src="../image/logos/header-logo-x2.png" alt="Logo 2" class="uniform-logo">
-                    </div>
-                    <div class="logo-box wide-box" id="ffw1"> <!-- Wider box for first wide logo -->
-                        <img src="../image/logos/ffw_logo_whiteStroke.png" alt="Logo 1" class="uniform-logo">
-                    </div>
-                    <div class="logo-box wide-box" id="ffw2"> <!-- Wider box for second wide logo -->
-                        <img src="../image/logos/fromtheheartpro_middle.png" alt="Logo 3" class="uniform-logo">
-                    </div>
-                    <div class="logo-box wide-box" id="ffw3"> <!-- Wider box for second wide logo -->
-                        <img src="../image/logos/sitelogo_url.png" alt="Logo 3" class="uniform-logo">
-                    </div>
+            <div class="logo-container" id="uniqueLogoContainer">
+                <div class="logo-box">
+                    <img src="../image/logos/header-logo-x2.png" alt="Logo 2" class="uniform-logo">
                 </div>
-                <!-- <div class="logo-container" id="uniqueLogoContainer">
+                <div class="logo-box wide-box" id="ffw1"> <!-- Wider box for first wide logo -->
+                    <img src="../image/logos/ffw_logo_whiteStroke.png" alt="Logo 1" class="uniform-logo">
+                </div>
+                <div class="logo-box wide-box" id="ffw2"> <!-- Wider box for second wide logo -->
+                    <img src="../image/logos/fromtheheartpro_middle.png" alt="Logo 3" class="uniform-logo">
+                </div>
+                <div class="logo-box wide-box" id="ffw3"> <!-- Wider box for second wide logo -->
+                    <img src="../image/logos/sitelogo_url.png" alt="Logo 3" class="uniform-logo">
+                </div>
+            </div>
+            <!-- <div class="logo-container" id="uniqueLogoContainer">
                     <img src="../image/logos/Albuquerque_Film_Office.png" alt="Logo 1" class="responsive-logo">
                     <img src="../image/logos/Copy-of-Untitled-1-1-300x251.png" alt="Logo 2" class="responsive-logo">
                     <img src="../image/logos/ffw_logo_whiteStroke.png" alt="Logo 3" class="responsive-logo">
@@ -281,101 +320,101 @@ function toggleBio(element) {
                     <img src="../image/logos/Copy-of-Untitled-1-1-300x251.png" alt="Logo 2" class="responsive-logo">
                     <img src="../image/logos/ffw_logo_whiteStroke.png" alt="Logo 3" class="responsive-logo">
                 </div> -->
-            </div>
+        </div>
 
-            <!-- Block 3 -->
+        <!-- Block 3 -->
 
-            <div class="block block-dark">
-                <footer class="footer">
-                    <div class="footer__addr">
-                      <!-- <h1 class="footer__logo">Something</h1> -->
-                          
-                      <h2 id="contact-us">Contact</h2>
-                      
-                      <address>
+        <div class="block block-dark">
+            <footer class="footer">
+                <div class="footer__addr">
+                    <!-- <h1 class="footer__logo">Something</h1> -->
+
+                    <h2 id="contact-us">Contact</h2>
+
+                    <address>
                         5534 Somewhere In. The World 22193-10212<br>
-                            
+
                         <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-                      </address>
-                    </div>
-                    
-                    <ul class="footer__nav">
-                      <li class="nav__item">
+                    </address>
+                </div>
+
+                <ul class="footer__nav">
+                    <li class="nav__item">
                         <h2 class="nav__title">Media</h2>
-                  
+
                         <ul class="nav__ul">
-                          <li>
-                            <a href="#">Online</a>
-                          </li>
-                  
-                          <li>
-                            <a href="#">Print</a>
-                          </li>
-                              
-                          <li>
-                            <a href="#">Alternative Ads</a>
-                          </li>
+                            <li>
+                                <a href="#">Online</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Print</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Alternative Ads</a>
+                            </li>
                         </ul>
-                      </li>
-                      
-                      <li class="nav__item nav__item--extra">
+                    </li>
+
+                    <li class="nav__item nav__item--extra">
                         <h2 class="nav__title">Technology</h2>
-                        
+
                         <ul class="nav__ul nav__ul--extra">
-                          <li>
-                            <a href="#">Hardware Design</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Software Design</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Digital Signage</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Automation</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Artificial Intelligence</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">IoT</a>
-                          </li>
+                            <li>
+                                <a href="#">Hardware Design</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Software Design</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Digital Signage</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Automation</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Artificial Intelligence</a>
+                            </li>
+
+                            <li>
+                                <a href="#">IoT</a>
+                            </li>
                         </ul>
-                      </li>
-                      
-                      <li class="nav__item">
+                    </li>
+
+                    <li class="nav__item">
                         <h2 class="nav__title">Legal</h2>
-                        
+
                         <ul class="nav__ul">
-                          <li>
-                            <a href="#">Privacy Policy</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Terms of Use</a>
-                          </li>
-                          
-                          <li>
-                            <a href="#">Sitemap</a>
-                          </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
                         </ul>
-                      </li>
-                    </ul>
-                    
-                    <div class="legal">
-                      <p>&copy; 2024. All rights reserved.</p>
-                      
-                      <div class="legal__links">
-                      </div>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    <p>&copy; 2024. All rights reserved.</p>
+
+                    <div class="legal__links">
                     </div>
-                  </footer>
-             
-                <!-- <h3>About Us</h3>
+                </div>
+            </footer>
+
+            <!-- <h3>About Us</h3>
                 <div class="animationImg animationImg-cover">
                     <div class="animation">
                         <div class="overlay">
@@ -414,7 +453,7 @@ function toggleBio(element) {
                         <div class="animationName">Princess Knight</div>
                     </div>
                 </div> -->
-            </div>
+        </div>
     </main>
 </body>
 
