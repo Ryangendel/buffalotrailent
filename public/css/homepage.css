@@ -796,8 +796,11 @@ div#row.lowerRow{
         border: 2px solid #CFB87C
     }
 
-    .more{
+    /* .more{
         font-size:20px
+    } */
+    #documentaries{
+        font-size:11px
     }
 
     #ffw1{width: 75%}
@@ -809,7 +812,7 @@ div#row.lowerRow{
     .more .read-more{
         color: #CFB87C;
         text-decoration: none;
-        font-size: 8px;
+        font-size: 14px;
         font-weight: 500;
         /* text-transform: uppercase; */
     }
