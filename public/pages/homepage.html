@@ -23,27 +23,7 @@
         }
     }
 
-    function addClickTouchHandler(element, handlerFunction) {
-    element.addEventListener('click', handlerFunction);
-    element.addEventListener('touchstart', function(event) {
-        event.preventDefault(); // Prevent mouse event from firing as well
-        handlerFunction.call(element, event); // Call the handler
-    });
-}
-
-// Define the toggleBio function, assumed you have it defined somewhere
-function toggleBio(element) {
-    // Your toggle code here
-    console.log("Toggled bio for element", element);
-}
-
-// Apply to all elements with class 'team-member'
-document.addEventListener('DOMContentLoaded', function() {
-    var teamMembers = document.querySelectorAll('.team-member');
-    teamMembers.forEach(function(member) {
-        addClickTouchHandler(member, function() { toggleBio(member); });
-    });
-});
+    
 </script>
 
 
