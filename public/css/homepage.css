@@ -794,8 +794,12 @@ div#row.lowerRow{
     .image{
         -webkit-filter: drop-shadow(0px 0px 0px #CFB87C);
         border: 2px solid #CFB87C
-        
     }
+
+    .more{
+        font-size:20px
+    }
+
     #ffw1{width: 75%}
 
     #title{
