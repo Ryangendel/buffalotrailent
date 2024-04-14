@@ -796,9 +796,8 @@ div#row.lowerRow{
         border: 2px solid #CFB87C
         
     }
-    #ffw1{
-        before { content: '\A'; }
-    }
+    #ffw1{display: block; }
+
     #title{
         font-size:4rem;
     }
