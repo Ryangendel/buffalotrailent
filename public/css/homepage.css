@@ -791,6 +791,13 @@ div#row.lowerRow{
 }
 
 @media (max-width: 600px) {
+    .wide-box {
+        width: 500px; /* Increased width for wide logos */
+        height: 100px; /* Consistent height with other logos */
+    }
+    .px1 {
+        background-image: url('https://i.imgur.com/2WuS1Q9.png');
+    }
     .image{
         -webkit-filter: drop-shadow(0px 0px 0px #CFB87C);
         border: 2px solid #CFB87C
