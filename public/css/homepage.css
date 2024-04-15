@@ -827,3 +827,9 @@ div#row.lowerRow{
         font-size:30px
     }
 }
+
+@media only screen and (max-width: 630px) {
+  .px1, .px2, .px3{
+      background-attachment: scroll;
+  }
+}
