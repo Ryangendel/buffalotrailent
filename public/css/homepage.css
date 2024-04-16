@@ -772,7 +772,7 @@ div#row.lowerRow{
     overflow-y: auto;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .team-grid {
         grid-template-columns: 1fr; /* One column on smaller screens */
     }
@@ -790,7 +790,7 @@ div#row.lowerRow{
     text-align:center;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .wide-box {
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
