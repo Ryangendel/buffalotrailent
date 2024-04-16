@@ -795,9 +795,7 @@ div#row.lowerRow{
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
     }
-    .px1 {
-        background-image: url('../image/headshots/tiff1.png');
-    }
+  
     .image{
         -webkit-filter: drop-shadow(0px 0px 0px #CFB87C);
         border: 2px solid #CFB87C
@@ -829,15 +827,13 @@ div#row.lowerRow{
     #abouttext{
       font-size:40px;
     }
+    .px1{
+      background-image: url('../image/headshots/tiff1.png');
+      background-size: cover; /* Ensures the background covers the entire element */
+      background-position: center center; /* Center the background image */
+      min-height: 100%; /* Minimum height to ensure it covers the viewport */
+      background-attachment: fixed; /* Optional based on earlier mention, can be problematic on mobile */
+      width: 100%; /* Ensures the div is full width */
+    } 
 }
 
-@media only screen and (max-width: 630px) {
-  .px1{
-    background-image: url('../image/unnamed.jpg');
-    background-size: cover; /* Ensures the background covers the entire element */
-    background-position: center center; /* Center the background image */
-    min-height: 100%; /* Minimum height to ensure it covers the viewport */
-    background-attachment: fixed; /* Optional based on earlier mention, can be problematic on mobile */
-    width: 100%; /* Ensures the div is full width */
-  } 
-}

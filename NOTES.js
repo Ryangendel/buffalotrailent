@@ -217,3 +217,14 @@
 //     }
 
 //6565 americas pkwy ne suite 228, 87110
+
+// @media only screen and (max-width: 630px) {
+//   .px1{
+//     background-image: url('../image/headshots/tiff1.png');
+//     background-size: cover; /* Ensures the background covers the entire element */
+//     background-position: center center; /* Center the background image */
+//     min-height: 100%; /* Minimum height to ensure it covers the viewport */
+//     background-attachment: fixed; /* Optional based on earlier mention, can be problematic on mobile */
+//     width: 100%; /* Ensures the div is full width */
+//   } 
+// }
