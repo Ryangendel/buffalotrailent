@@ -790,7 +790,7 @@ div#row.lowerRow{
     text-align:center;
 }
 
-@media only screen and (max-width: 600px) {
+@media (width >= 600px) {
     .wide-box {
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
