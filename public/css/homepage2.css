@@ -790,7 +790,7 @@ div#row.lowerRow{
     text-align:center;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .wide-box {
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
@@ -835,9 +835,8 @@ div#row.lowerRow{
       background-attachment: fixed; /* Optional based on earlier mention, can be problematic on mobile */
       width: 100%; /* Ensures the div is full width */
     } 
+    
 }
 
-.px2{
-  background:blue
-}
+
 
