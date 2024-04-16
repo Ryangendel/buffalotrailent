@@ -796,7 +796,7 @@ div#row.lowerRow{
         height: 100px; /* Consistent height with other logos */
     }
     .px1 {
-        background-image: url('https://i.imgur.com/2WuS1Q9.png');
+        background-image: url('../image/headshots/tiff1.png');
     }
     .image{
         -webkit-filter: drop-shadow(0px 0px 0px #CFB87C);
@@ -825,6 +825,9 @@ div#row.lowerRow{
     }
     .big-text{
         font-size:30px
+    }
+    #abouttext{
+      font-size:15px;
     }
 }
 
