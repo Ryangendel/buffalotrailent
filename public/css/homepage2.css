@@ -828,7 +828,7 @@ div#row.lowerRow{
       font-size:40px;
     }
     .px1{
-      background-image: url('../image/headshots/tiff1.png');
+      background-image: url('https://www.akc.org/wp-content/uploads/2017/11/Bulldog-standing-in-the-grass.jpg');
       background-size: cover; /* Ensures the background covers the entire element */
       background-position: center center; /* Center the background image */
       min-height: 100%; /* Minimum height to ensure it covers the viewport */
