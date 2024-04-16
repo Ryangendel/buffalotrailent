@@ -790,7 +790,7 @@ div#row.lowerRow{
     text-align:center;
 }
 
-@media (width >= 600px) {
+@media (max-width: 600px) {
     .wide-box {
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
@@ -828,13 +828,12 @@ div#row.lowerRow{
       font-size:40px;
     }
     .px1{
-      background-image: url('../image/bte_logo_long.png');
+      background-image: url('https://www.akc.org/wp-content/uploads/2017/11/Bulldog-standing-in-the-grass.jpg');
       background-size: cover; /* Ensures the background covers the entire element */
       background-position: center center; /* Center the background image */
       min-height: 100%; /* Minimum height to ensure it covers the viewport */
-      background-attachment: fixed; /* Optional based on earlier mention, can be problematic on mobile */
+      background-attachment: initial; /* Optional based on earlier mention, can be problematic on mobile */
       width: 100%; /* Ensures the div is full width */
-      background-attachment: initial;
     } 
     
 }
