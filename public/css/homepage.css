@@ -830,7 +830,7 @@ div#row.lowerRow{
 
 @media only screen and (max-width: 630px) {
   .px1{
-    background-image: url('https://i.imgur.com/2WuS1Q9.png');
+    background-image: url('../image/bte.png');
     background-size: cover; /* Ensures the background covers the entire element */
     background-position: center center; /* Center the background image */
     min-height: 100%; /* Minimum height to ensure it covers the viewport */
