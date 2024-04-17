@@ -832,7 +832,7 @@ div#row.lowerRow{
       font-size:20px;
     }
     .px1{
-      background-image: url('../image/bte.png');
+      background-image: url('../image/bte_logo_long.png');
       background-size: cover; /* Ensures the background covers the entire element */
       background-position: center center; /* Center the background image */
       min-height: 100%; /* Minimum height to ensure it covers the viewport */
