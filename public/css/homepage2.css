@@ -792,9 +792,6 @@ div#row.lowerRow{
 
 @media (max-width: 600px) {
 
-  .px1{
-    background:blue;
-  }
     .wide-box {
         width: 500px; /* Increased width for wide logos */
         height: 100px; /* Consistent height with other logos */
