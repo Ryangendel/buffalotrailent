@@ -15,7 +15,7 @@ app.get("*", (req, res)=>{
 //     res.sendFile(path.join(__dirname,'./public/pages/index.html'));
 // })
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!!!!!`);
     console.log(`App running on port ${PORT}!!!!!`);
 });
