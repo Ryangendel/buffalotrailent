@@ -238,3 +238,10 @@
 //scp -i "~/.ssh/buffalotrail2.pem" node_project.tar.gz ec2-user@ec2-18-188-82-182.us-east-2.compute.amazonaws.com:/home/ec2-user/
 
 // scp -i "~/.ssh/buffalotrailthree.pem" buffalotrailwebsitetarball.tar.gz ec2-user@ec2-18-117-255-228.us-east-2.compute.amazonaws.com:/home/ec2-user/
+
+//scp -i "~/.ssh/buffalotrailthree.pem" -r /. ec2-user@ec2-18-117-255-228.us-east-2.compute.amazonaws.com:/home/ec2-user/
+
+
+// ssh -i "~/.ssh/buffalotrailfour.pem" ubuntu@ec2-3-19-2-124.us-east-2.compute.amazonaws.com
+
+// ssh -i "~/.ssh/buffalotrailfour.pem" ubuntu@3.19.2.124 -v
