@@ -228,3 +228,13 @@
 //     width: 100%; /* Ensures the div is full width */
 //   } 
 // }
+
+// rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+// -e "ssh -i ~/.ssh/new-mexico-bte.pem" \
+// . ubuntu@ec2-18-191-159-42.us-east-2.compute.amazonaws.com:~/app
+
+//scp -i "buffalotrail2.pem" -r /. ec2-user@ec2-18-188-82-182.us-east-2.compute.amazonaws.com
+
+//scp -i "~/.ssh/buffalotrail2.pem" node_project.tar.gz ec2-user@ec2-18-188-82-182.us-east-2.compute.amazonaws.com:/home/ec2-user/
+
+// scp -i "~/.ssh/buffalotrailthree.pem" buffalotrailwebsitetarball.tar.gz ec2-user@ec2-18-117-255-228.us-east-2.compute.amazonaws.com:/home/ec2-user/
