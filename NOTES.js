@@ -244,4 +244,5 @@
 
 // ssh -i "~/.ssh/buffalotrailfour.pem" ubuntu@ec2-3-19-2-124.us-east-2.compute.amazonaws.com
 
-// ssh -i "~/.ssh/buffalotrailfour.pem" ubuntu@3.19.2.124 -v
+// ssh -i "~/.ssh/buffalotrailfive.pem" ubuntu@18.224.194.15-v
+// ssh -i "~/.ssh/buffalotrailfive.pem" ubuntu@ec2-18-224-194-15.us-east-2.compute.amazonaws.com
