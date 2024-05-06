@@ -749,7 +749,7 @@ h5 {
   }
 
   .nav__item--extra {
-    flex-grow: 2;
+    /* flex-grow: 2; */
   }
 
   .footer__addr {
